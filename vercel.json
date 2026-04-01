@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/img/:fileId",
+      "destination": "https://drive.google.com/thumbnail?id=:fileId&sz=w800"
+    },
+    {
+      "source": "/vid/:fileId",
+      "destination": "https://drive.google.com/uc?export=download&id=:fileId"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
